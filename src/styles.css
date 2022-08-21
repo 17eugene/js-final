@@ -1,0 +1,83 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 30px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+}
+
+.form {
+  width: 60%;
+  max-width: 450px;
+  min-width: 380px;
+  margin: 0 auto;
+}
+
+.fieldset {
+  padding: 10px;
+}
+
+.legend {
+  padding: 0 10px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.wrapper {
+  margin-bottom: 30px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.required {
+  font-size: 10px;
+}
+
+label[class*="label"] {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+input[class*="input"] {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+
+.button {
+  width: 100%;
+  outline: none;
+  border: 1px solid #8f8e8e;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: #5f92f0;
+  color: #f0f6f6;
+  font-weight: 700;
+}
+
+.button:disabled {
+  background-color: #5d6678;
+}
+
+.results-container {
+  margin-top: 20px;
+}
+
+.result:first-child {
+  margin-bottom: 10px;
+}

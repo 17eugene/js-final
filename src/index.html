@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="form">
+        <fieldset class="fieldset">
+          <legend class="legend">Choose your hamburger</legend>
+
+          <div class="size-container wrapper">
+            <p class="title">Select the size: <sup class="required">*</sup></p>
+
+            <input
+              class="size-input"
+              type="radio"
+              id="small"
+              name="size"
+              value="small"
+            />
+            <label class="size-label" for="small">Small</label>
+
+            <input
+              class="size-input"
+              type="radio"
+              id="large"
+              name="size"
+              value="large"
+            />
+            <label class="size-label" for="large">Large</label>
+          </div>
+
+          <div class="stuffing-container wrapper">
+            <p class="title">
+              Select the stuffing: <sup class="required">*</sup>
+            </p>
+            <input
+              type="radio"
+              name="stuffing"
+              value="cheese"
+              id="cheese"
+              class="stuffing-input"
+            />
+            <label for="cheese" class="stuffing-label">Cheese</label>
+
+            <input
+              type="radio"
+              name="stuffing"
+              value="salad"
+              id="salad"
+              class="stuffing-input"
+            />
+            <label for="salad" class="stuffing-label">Salad</label>
+
+            <input
+              type="radio"
+              name="stuffing"
+              value="potato"
+              id="potato"
+              class="stuffing-input"
+            />
+            <label for="potato" class="stuffing-label">Potato</label>
+          </div>
+
+          <div class="extra-container wrapper">
+            <p class="title">Select additional:</p>
+            <input
+              type="checkbox"
+              name="extra"
+              value="mayo"
+              id="mayo"
+              class="extra-input"
+            />
+            <label for="mayo" class="extra-label">Mayo</label>
+
+            <input
+              type="checkbox"
+              name="extra"
+              value="spicies"
+              id="spicies"
+              class="extra-input"
+            />
+            <label for="spicies" class="extra-label">Spicies</label>
+          </div>
+
+          <button class="button">Calculate</button>
+        </fieldset>
+
+        <div class="results-container">
+          <p class="result">
+            Price:
+            <span class="price"></span>
+          </p>
+          <p class="result">
+            Calories:
+            <span class="kkal"></span>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="./hamburger.js" type="module"></script>
+    <script src="./task2.js" type="module"></script>
+  </body>
+</html>
